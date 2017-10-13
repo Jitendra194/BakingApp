@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Baking App</string>
+    <string name="ingredients_list_title">Ingredients List</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ingredient_text_view_title_string">INGREDIENT: </string>
+    <string name="measure_text_view_title_string">MEASURE: </string>
+    <string name="quantity_text_view_title_string">QUANTITY: </string>
+    <string name="widget_previous_recipe">previous recipe</string>
+    <string name="widget_next_recipe">next recipe</string>
+    <string name="view_ingredients_list">view ingredients list</string>
+    <string name="view_previous_step">view previous step</string>
+    <string name="view_next_step">view next step</string>
+    <string name="recipe_image">recipe image</string>
+    <string name="view_step">view step</string>
+    <string name="play_video" tools:ignore="UnusedResources">play video</string>
+    <string name="pause_video" tools:ignore="UnusedResources">pause video</string>
+</resources>

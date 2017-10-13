@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/ingredient_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ingredient_text_view_title_string"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="INGREDIENT: " />
+
+        <TextView
+            android:id="@+id/ingredient_detail_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            app:layout_constraintLeft_toRightOf="@id/ingredient_title_text_view"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ingredient_title_text_view"
+            tools:text="Graham Cracker crumbs" />
+
+
+        <TextView
+            android:id="@+id/quantity_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/quantity_text_view_title_string"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/ingredient_title_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/ingredient_detail_text_view" />
+
+        <TextView
+            android:id="@+id/quantity_detail_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            app:layout_constraintLeft_toRightOf="@id/quantity_title_text_view"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/quantity_title_text_view"
+            tools:text="2" />
+
+        <TextView
+            android:id="@+id/measure_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/measure_text_view_title_string"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@+id/quantity_title_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/quantity_detail_text_view" />
+
+        <TextView
+            android:id="@+id/measure_detail_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            app:layout_constraintLeft_toRightOf="@id/measure_title_text_view"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/measure_title_text_view"
+            tools:text="CUP" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
